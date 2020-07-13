@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gpsk1.kidscordinggame.hamburger2"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="115dp"
+        android:background="@drawable/hamburgerbackground"
+        >
+
+
+        <ImageView
+            android:id="@+id/warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/warning" />
+
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            //위에 레이아웃
+
+
+            <ImageButton
+                android:id="@+id/submit"
+                android:layout_width="100dp"
+                android:layout_height="47dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:onClick="onSubmitClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/submit" />
+
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="100dp"
+                android:layout_height="47dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/submit"
+                android:layout_toStartOf="@+id/submit"
+                android:background="@android:color/transparent"
+                android:onClick="onBackClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/back" />
+
+            <ImageView
+                android:id="@+id/last"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/third"
+                android:layout_alignLeft="@+id/fourth"
+                android:layout_alignStart="@+id/fourth"
+                android:layout_marginBottom="9dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/upperbread" />
+
+            <ImageView
+                android:id="@+id/second"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/first"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="23dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/lettuce" />
+
+            <ImageView
+                android:id="@+id/fourth"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/second"
+                android:layout_alignStart="@+id/third"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/patty" />
+
+            <ImageView
+                android:id="@+id/third"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/first"
+                android:layout_alignStart="@+id/second"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/cheese" />
+
+            <ImageView
+                android:id="@+id/first"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/second"
+                android:layout_marginBottom="33dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/bread" />
+
+        </RelativeLayout>
+
+
+        //왼쪽 레이아웃
+
+
+        //오른쪽 레이아웃
+
+        <RelativeLayout
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/RelativeLayout">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/imageView2"
+                android:layout_marginBottom="41dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/question"
+                tools:layout_editor_absoluteX="43dp"
+                tools:layout_editor_absoluteY="30dp"
+                tools:srcCompat="@drawable/question" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_alignStart="@+id/imageView3"
+                android:layout_marginBottom="48dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/question"
+                tools:layout_editor_absoluteX="43dp"
+                tools:srcCompat="@drawable/question" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+
+                android:layout_above="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="38dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/question"
+                tools:srcCompat="@drawable/question" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+
+                android:layout_above="@+id/imageView2"
+                android:layout_alignStart="@+id/imageView3"
+                android:layout_marginBottom="34dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/question"
+                tools:srcCompat="@drawable/question" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/imageView4"
+                android:layout_marginTop="29dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/question"
+                tools:srcCompat="@drawable/question" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/RelativeLayout">
+
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="155dp"
+                android:layout_height="55dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/imageButtonTomato"
+                android:background="@android:color/transparent"
+                android:onClick="onClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/breadbutton" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="155dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="11dp"
+                android:background="@android:color/transparent"
+                android:onClick="onClicked"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:srcCompat="@drawable/pattybutton" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="155dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/imageButton3"
+                android:background="@android:color/transparent"
+                android:onClick="onClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/lettucebutton" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="155dp"
+                android:layout_height="55dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/imageButton4"
+                android:background="@android:color/transparent"
+                android:onClick="onClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/cheesebutton" />
+
+
+            <ImageButton
+                android:id="@+id/imageButtonTomato"
+                android:layout_width="155dp"
+                android:layout_height="55dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/imageButton"
+                android:background="@android:color/transparent"
+                android:onClick="onClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/tomatobutton" />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

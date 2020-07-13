@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mandubackground"
+    tools:context="com.example.gpsk1.kidscordinggame.mandu">
+
+    <ImageView
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/warning" />
+    <RelativeLayout
+        android:id="@+id/Show"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp">
+
+
+
+        <ImageView
+            android:id="@+id/show"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/complete"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/showboil"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/complete"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/back"
+            android:background="#00000000"
+            android:onClick="onClicked"
+            android:scaleType="fitXY"
+            android:src="@drawable/complete"
+            android:text="완성" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/complete"
+            android:layout_toStartOf="@+id/complete"
+            android:background="#00000000"
+            android:onClick="onClicked"
+            android:scaleType="fitXY"
+            android:src="@drawable/back"
+            android:text="뒤로" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="210dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/Show">
+
+        <ImageView
+            android:id="@+id/input1"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/quest"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/input2"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/input1"
+            android:layout_marginTop="56dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/input3"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/input1"
+            android:layout_marginTop="36dp"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/p1makesok" />
+
+        <ImageView
+            android:id="@+id/input4"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/input2"
+            android:layout_marginTop="34dp"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/p1makesok" />
+
+        <ImageView
+            android:id="@+id/input5"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/input3"
+            android:layout_marginTop="36dp"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/p1makesok" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Button"
+        android:layout_width="170dp"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Show">
+
+        <ImageButton
+            android:id="@+id/makesok"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/makepee"
+            android:background="#00000000"
+            android:onClick="onClicked"
+            android:scaleType="fitXY"
+            android:src="@drawable/makesok"
+            android:text="속 만들기" />
+
+        <ImageButton
+            android:id="@+id/makepee"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/boil"
+            android:background="#00000000"
+            android:onClick="onClicked"
+            android:scaleType="fitXY"
+            android:src="@drawable/makepee"
+            android:text="피 만들기" />
+
+        <ImageButton
+            android:id="@+id/putsok"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/makesok"
+            android:background="#00000000"
+            android:onClick="onClicked"
+            android:scaleType="fitXY"
+            android:src="@drawable/putsok"
+            android:text="피에 속 넣기" />
+
+        <ImageButton
+            android:id="@+id/makeshape"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/putsok"
+            android:background="#00000000"
+            android:onClick="onClicked"
+            android:scaleType="fitXY"
+            android:src="@drawable/makeshape"
+            android:text="모양 빚기" />
+
+        <ImageButton
+            android:id="@+id/boil"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:onClick="onClicked"
+            android:scaleType="fitXY"
+            android:src="@drawable/boil"
+            android:text="삶기" />
+
+        <ImageButton
+            android:id="@+id/repeat"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/makeshape"
+            android:background="#00000000"
+            android:onClick="onClicked"
+            android:scaleType="fitXY"
+            android:src="@drawable/repeat"
+            android:text="몇분동안" />
+
+        <ImageButton
+            android:id="@+id/three"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/five"
+            android:background="#00000000"
+            android:onClick="onClicked"
+            android:scaleType="fitXY"
+            android:src="@drawable/three"
+            android:text="3" />
+
+        <ImageButton
+            android:id="@+id/five"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_alignTop="@+id/ten"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:onClick="onClicked"
+            android:scaleType="fitXY"
+            android:src="@drawable/five"
+            android:text="5" />
+
+        <ImageButton
+            android:id="@+id/ten"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/repeat"
+            android:background="#00000000"
+            android:onClick="onClicked"
+            android:scaleType="fitXY"
+            android:src="@drawable/ten"
+            android:text="10" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+

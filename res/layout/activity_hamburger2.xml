@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gpsk1.kidscordinggame.hamburger2"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="115dp"
+        android:background="@drawable/hamburgerbackground">
+
+        <ImageView
+            android:id="@+id/warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/warning" />
+
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            //위에 레이아웃
+
+
+            <ImageView
+
+                android:id="@+id/fifth"
+                android:layout_width="170dp"
+
+                android:layout_height="50dp"
+                android:layout_above="@+id/third"
+                android:layout_alignLeft="@+id/fourth"
+                android:layout_alignStart="@+id/fourth"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/tomato" />
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="100dp"
+                android:layout_height="47dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/submit"
+                android:layout_toStartOf="@+id/submit"
+                android:background="@android:color/transparent"
+                android:onClick="onBackClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/back" />
+
+            <ImageButton
+                android:id="@+id/submit"
+                android:layout_width="100dp"
+                android:layout_height="47dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:onClick="onSubmitClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/submit" />
+
+            <ImageView
+                android:id="@+id/last"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/fourth"
+                android:layout_alignLeft="@+id/fifth"
+                android:layout_alignStart="@+id/fifth"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/upperbread" />
+
+            <ImageView
+                android:id="@+id/fourth"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/second"
+                android:layout_alignLeft="@+id/third"
+                android:layout_alignStart="@+id/third"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/cheese" />
+
+            <ImageView
+                android:id="@+id/third"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+
+                android:layout_above="@+id/first"
+                android:layout_toStartOf="@+id/submit"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/lettuce" />
+
+            <ImageView
+                android:id="@+id/first"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/third"
+                android:layout_marginBottom="21dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/bread" />
+
+            <ImageView
+                android:id="@+id/second"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/third"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/third"
+                android:layout_marginBottom="48dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/patty" />
+
+        </RelativeLayout>
+
+
+        //왼쪽 레이아웃
+
+        <RelativeLayout
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/RelativeLayout">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="7dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/question"
+                tools:layout_editor_absoluteX="43dp"
+                tools:layout_editor_absoluteY="30dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_alignStart="@+id/imageView"
+                android:layout_marginBottom="40dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/question"
+                tools:layout_editor_absoluteX="43dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+
+                android:layout_above="@+id/imageView"
+                android:layout_alignStart="@+id/imageView2"
+                android:layout_marginBottom="22dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/question" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+                android:layout_above="@+id/imageView2"
+                android:layout_alignStart="@+id/imageView3"
+                android:layout_marginBottom="24dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/question" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+                android:layout_above="@+id/imageView3"
+                android:layout_alignStart="@+id/imageView4"
+                android:layout_marginBottom="26dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/question" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/imageView9"
+                android:layout_marginTop="27dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/question" />
+
+
+        </RelativeLayout>
+
+
+        //오른쪽 레이아웃
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/RelativeLayout">
+
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="155dp"
+                android:layout_height="55dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/imageButton"
+                android:background="@android:color/transparent"
+                android:onClick="onClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/breadbutton" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="155dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/imageButton4"
+                android:background="@android:color/transparent"
+                android:onClick="onClicked"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:srcCompat="@drawable/pattybutton" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="155dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/imageButton2"
+                android:background="@android:color/transparent"
+                android:onClick="onClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/lettucebutton" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="155dp"
+                android:layout_height="55dp"
+
+                android:layout_alignStart="@+id/imageButton5"
+                android:layout_below="@+id/imageButton5"
+                android:background="@android:color/transparent"
+                android:onClick="onClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/cheesebutton" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="155dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:onClick="onClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/tomatobutton" />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
