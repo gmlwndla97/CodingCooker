@@ -8,15 +8,16 @@
 
 
 ## 2. 주요 기능 실행 화면
----------------
-시작 화면이 나오고, 버튼을 고른다. 게임 방법을 누르면, 게임에 대한 설명이 보여진다.
-<br/><br/>
+
+
 <div class="parent" style="width: 600px; height: 250px;">
     <div class="child"img width="250" height="250" src="https://user-images.githubusercontent.com/37864097/92612262-ac9af580-f2f4-11ea-8e46-9cf094215a5a.png">
 </div>
 <img width="180" height="270" src="https://user-images.githubusercontent.com/37864097/92998182-5aa3db00-f553-11ea-8039-945e6c8eb4ce.png">
-<img width="180" height="270" src="https://user-images.githubusercontent.com/37864097/92998183-5bd50800-f553-11ea-907a-961af9044550.png">
-
+<img width="180" height="270" src="https://user-images.githubusercontent.com/37864097/92998183-5bd50800-f553-11ea-907a-961af9044550.png"><br/><br/>
+시작 화면이 나오고, 버튼을 고른다. 게임 방법을 누르면, 게임에 대한 설명이 보여진다.
+<br/><br/>
 
 
 ## 3. 한계점 및 개선점
+코딩 교육 어플이라는 점에서 봤을 때, 우리 게임은 아직 많이 부족한 것이 사실이다. 코딩에 필수적인 순차적인 사고를 돕기 위한 기획이라고는 하지만 기본적으로 기억력 게임 느낌이 더 강하다고 생각한다. ...
