@@ -30,6 +30,9 @@
   
 오른쪽의 버튼을 누르면 누른 순서대로 왼쪽 코딩 블록은 위에서부터 블록들이 맞춰진다. 그리고 위쪽의 음식 그림들은 아래에서부터 쌓이게 된다. 취소 버튼을 누르면 가장 최근에 눌려졌던 튼의 블록과 음식이 사라지게 된다.추가적 기능으로 게임 제한 시간인 30초에서 5초가 남게 되면, 빨간색으로 화면이 바뀌면서 경고를 해준다.
 <br/><br/>
+<div class="parent" style="width: 600px; height: 250px;">
+    <div class="child"img width="250" height="250" src="https://user-images.githubusercontent.com/37864097/92612262-ac9af580-f2f4-11ea-8e46-9cf094215a5a.png">
+</div>
 <img width="180" height="270" src="https://user-images.githubusercontent.com/37864097/93021156-3cee7880-f61c-11ea-814b-dfe1872d67f3.png">
 <img width="180" height="270" src="https://user-images.githubusercontent.com/37864097/93021157-3cee7880-f61c-11ea-9c2d-3e31a3bc9290.png">    
 <img width="180" height="270" src="https://user-images.githubusercontent.com/37864097/93021149-3a8c1e80-f61c-11ea-830f-9ec203a17bf0.png"><br/><br/>
